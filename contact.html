@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - CertiTrack</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd; /* Light blue background */
+            text-align: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #007bff; /* Blue background */
+            overflow: auto;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Keeps title on one side and links on the other */
+            align-items: center;
+        }
+
+        .navbar h2 {
+            margin: 0;
+            color: white;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px; /* Space between links */
+            margin-right: 40px; /* Space from right edge */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: #0056b3; /* Darker blue on hover */
+        }
+
+        .contact-container {
+            padding: 50px;
+            max-width: 800px;
+            margin: auto; /* Center the container */
+            background-color: white; /* White background for the form */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+        }
+
+        .contact-container h1 {
+            font-size: 36px;
+            color: #007bff; /* Blue color for heading */
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 18px;
+            color: #555; /* Dark gray for paragraph */
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left; /* Align labels and inputs to the left */
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%; /* Full width */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px; /* Rounded corners */
+            box-sizing: border-box; /* Include padding and border in element's total width */
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing only */
+        }
+
+        .submit-btn {
+            background-color: #007bff; /* Blue background */
+            color: white; /* White text */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding */
+            font-size: 18px; /* Font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background 0.3s ease; /* Transition for background color */
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h2>CertiTrack</h2>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </div>
+
+    <!-- Contact Us Form -->
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, please fill out the form below:</p>
+
+        <form action="#" method="post"> <!-- Adjust action attribute as needed -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
